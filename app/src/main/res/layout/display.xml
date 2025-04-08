@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearGeneral"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+
+    android:weightSum="1"
+    android:background="#d1d2f0">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="502dp"
+        android:onClick="onButtonClick2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/textView"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:text="Annonymization Options"
+            style="@style/AppTheme.PopupOverlay"
+            android:textColor="#171a55"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:layout_marginLeft="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="No Anonymization set as default"
+            android:id="@+id/textView7"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:textStyle="bold"
+            android:textColor="#e71414"
+            android:layout_marginTop="20dp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="505dp"
+            android:id="@+id/radioGroup"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:paddingTop="20dp">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anonymization"
+                android:id="@+id/checkBox"
+                android:checked="false"
+                android:layout_row="3"
+                android:layout_column="0" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shift the location distace and direction"
+                android:id="@+id/radio1"
+                android:checked="false" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:checked="false">
+
+                <EditText
+                    android:layout_width="192dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/Text1" />
+
+                <Spinner
+                    android:layout_width="186dp"
+                    android:layout_height="90dp"
+                    android:id="@+id/spinner"
+                    android:spinnerMode="dropdown"
+                    android:contextClickable="true" />
+            </LinearLayout>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Send an area square length of [in miles]"
+                android:id="@+id/radio2"
+                android:checked="false" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:layout_gravity="center_horizontal">
+
+                <EditText
+                    android:layout_width="192dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/Text2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="In Miles"
+                    android:id="@+id/textView6"
+                    android:layout_weight="0.54" />
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Search"
+                android:id="@+id/map"
+                android:layout_row="4"
+                android:layout_column="0"
+                android:onClick="onButtonClick2"
+                android:textSize="30dp"
+                android:layout_marginTop="50dp" />
+
+
+        </RadioGroup>
+
+
+    </GridLayout>
+
+</LinearLayout>

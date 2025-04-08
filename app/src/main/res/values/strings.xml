@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">HIDE and FIND</string>
+    <string name="action_settings">Developed by Safat,Tanzila,Ishan,Ayesha</string>
+
+    <string-array name="Direction">
+        <item>North</item>
+        <item>South</item>
+        <item>East</item>
+        <item>West</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_try_map">Map</string>
+    <string name="title_activity_maps2">Map</string>
+    <string name="title_activity_maps3">Map</string>
+    <string name="title_activity_location">LocationActivity</string>
+</resources>
